@@ -1,0 +1,37 @@
+doctype html
+html.no-js(lang='uk')
+  head
+    meta(charset='utf8')
+    meta(name='description' content='WelcomeTour - туристичний сайт')
+    meta(name='viewport' content='width=devive-width, initial-scale=1')
+    title WelcomeTour - туристиний сайт Трускавця
+
+    //build:css styles/vendor.css
+    //bower:css
+    //endbower
+    //endbuild
+
+    //build:css styles/main.css
+    link(rel='stylesheet' href='styles/main.css')
+    //endbuild
+
+    //build:js scripts/vendor.js
+    //bower:js
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/jquery/dist/jquery.js')
+    //endbower
+    //endbuild
+
+    body
+      header.page-header
+
+
+      // build:js scripts/plugins.js
+      script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+      script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
+      // endbuild
+
+      // build:js scripts/main.js
+      script(src='scripts/main.js')
+      // endbuild
+
