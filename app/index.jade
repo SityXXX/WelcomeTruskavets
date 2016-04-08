@@ -3,7 +3,7 @@ html.no-js(lang='uk')
   head
     meta(charset='utf8')
     meta(name='description' content='WelcomeTour - туристичний сайт')
-    meta(name='viewport' content='width=devive-width, initial-scale=1')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     title WelcomeTour - туристиний сайт Трускавця
 
     //build:css styles/vendor.css
@@ -17,13 +17,13 @@ html.no-js(lang='uk')
 
     //build:js scripts/vendor.js
     //bower:js
-    script(src='/bower_components/modernizr/modernizr.js')
     script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
     //endbower
     //endbuild
 
     body
-      header.page-header
+      include jade/blocks/page-header
 
 
       // build:js scripts/plugins.js
