@@ -117,7 +117,7 @@ gulp.task('serve', ['jade','styles', 'scripts', 'fonts'], () => {
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/*.jade', ['jade']);
+  gulp.watch('app/**/*.jade', ['jade']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
@@ -162,7 +162,6 @@ gulp.task('wiredep', () => {
 
   gulp.src('app/*.jade')
     .pipe(wiredep({
-      exclude: ['bootstrap-sass'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));

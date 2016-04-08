@@ -1,0 +1,32 @@
+.worktime {
+
+  color: #ffffff;
+  display: inline-block;
+  font-size: 13px;
+  padding-left: 30px;
+  position: relative;
+  margin: 0 5px;
+
+  &::before {
+
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 23px;
+    height: 23px;
+    background: url('../images/clock@1x.png') no-repeat;
+    background-size: 23px 23px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+
+    .svg & {
+
+      background-image: url('../images/clock.svg');
+
+    }
+
+  }
+
+}

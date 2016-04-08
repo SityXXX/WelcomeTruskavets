@@ -1,4 +1,10 @@
+@import 'scafolding/fonts.scss';
 @import 'vendor/_bootstrap';
 
 @import 'blocks/page-header';
 @import 'blocks/menu';
+@import 'blocks/language';
+@import 'blocks/logo';
+@import 'blocks/phone';
+@import 'blocks/worktime';
+@import 'blocks/search';
