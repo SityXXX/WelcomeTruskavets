@@ -1,0 +1,42 @@
+.booking {
+  text-align: left;
+
+  &__heading {
+
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+  &__top-row {
+
+    background: rgba(9,80,113,0.75);
+    padding: 10px 20px;
+    border-top-left-radius: $border-radius-base;
+    border-top-right-radius: $border-radius-base;
+
+  }
+
+  &__bottom-row {
+
+    background-color: #ececec;
+    padding: 20px 20px;
+    border-bottom-left-radius: $border-radius-base;
+    border-bottom-right-radius: $border-radius-base;
+
+  }
+
+  & label {
+
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+
+}

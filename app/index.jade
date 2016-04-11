@@ -8,6 +8,7 @@ html.no-js(lang='uk')
 
     //build:css styles/vendor.css
     //bower:css
+    link(rel='stylesheet', href='/bower_components/bootstrap-select/dist/css/bootstrap-select.css')
     //endbower
     //endbuild
 
@@ -17,21 +18,15 @@ html.no-js(lang='uk')
 
     //build:js scripts/vendor.js
     //bower:js
-    script(src='/bower_components/modernizr/modernizr.js')
     script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/bootstrap-select/dist/js/bootstrap-select.js')
     //endbower
     //endbuild
 
     body
       include jade/blocks/page-header
-
-
-      // build:js scripts/plugins.js
-      script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
-      script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
-      script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
-      // endbuild
 
       // build:js scripts/main.js
       script(src='scripts/main.js')

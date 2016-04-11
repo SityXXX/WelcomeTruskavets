@@ -1,0 +1,45 @@
+.booking
+  .booking__heading Оберіть кращий відпочинок в Трускавці
+  .booking__top-row.row
+    .col-md-2
+      label(for='resort') Проживання
+      select#resort(name='resort')
+        option(value='Rixos') Rixos
+    .col-md-2
+      label(for='room') Номер
+      select#room(name='room')
+        option(value='Стандарт') Стандарт
+    .col-md-2
+      label(for='date_arrive') Дата поселення
+      input#date_arrive(type='text' name='date_arrive')
+    .col-md-2
+      label(for='date_arrive') Дата виїзду
+      input#date_arrive(type='text' name='date_arrive')
+    .col-md-2
+      label(for='adults') Кількість дорослих
+      select#adults(name='date_arrive')
+        option(value='1') 1
+        option(value='2') 2
+        option(value='3') 3
+        option(value='4') 4
+    .col-md-2
+      label(for='adults') Кількість дітей
+      select#adults(name='date_arrive')
+        option(value='0') 0
+        option(value='1') 1
+        option(value='2') 2
+        option(value='3') 3
+        option(value='4') 4
+  .booking__bottom-row.row
+    .col-md-2
+      input#name(type='text' name='name')
+    .col-md-2
+      input#suname(type='text' name='suname')
+    .col-md-2
+      input#second_name(type='text' name='second_name')
+    .col-md-2
+      input#phone(type='text' name='phone')
+    .col-md-2
+      input#email(type='text' name='email')
+    .col-md-2
+      input(type='submit' name='submit' value='Бронювати')
