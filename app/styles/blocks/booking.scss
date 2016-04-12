@@ -1,5 +1,20 @@
 .booking {
+
   text-align: left;
+
+  .row {
+
+    margin-left: -5px;
+    margin-right: -5px;
+
+  }
+
+  [class^='col-'] {
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
 
   &__heading {
 
@@ -14,9 +29,9 @@
   &__top-row {
 
     background: rgba(9,80,113,0.75);
-    padding: 10px 20px;
-    border-top-left-radius: $border-radius-base;
-    border-top-right-radius: $border-radius-base;
+    padding: 15px 10px;
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
 
   }
 
@@ -24,8 +39,8 @@
 
     background-color: #ececec;
     padding: 20px 20px;
-    border-bottom-left-radius: $border-radius-base;
-    border-bottom-right-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-large;
+    border-bottom-right-radius: $border-radius-large;
 
   }
 
@@ -36,6 +51,13 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
+    margin-left: 10px;
+
+  }
+
+  &__5stars {
+
+
 
   }
 
