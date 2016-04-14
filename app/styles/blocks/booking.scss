@@ -4,15 +4,25 @@
 
   .row {
 
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -3px;
+    margin-right: -3px;
 
   }
 
   [class^='col-'] {
 
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+  }
+
+  .form-group {
+
+    @media (min-width: $screen-md-min) {
+
+      margin-bottom: 0;
+
+    }
 
   }
 
@@ -38,7 +48,7 @@
   &__bottom-row {
 
     background-color: #ececec;
-    padding: 20px 20px;
+    padding: 20px 10px;
     border-bottom-left-radius: $border-radius-large;
     border-bottom-right-radius: $border-radius-large;
 
@@ -55,9 +65,208 @@
 
   }
 
-  &__5stars {
+  &__button-submit-wrap {
 
+    position: relative;
 
+    &::before {
+
+      content: '';
+      width: 11px;
+      height: 18px;
+      background: url('../images/chevrone-right@1x.png') no-repeat;
+      background-size: 11px 18px;
+      opacity: 0.67;
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      margin-top: -9px;
+
+    }
+
+  }
+
+  &__button-submit {
+
+    border-radius: $border-radius-small;
+    text-transform: uppercase;
+    @include gradient-vertical(#fc8a29,#f8761f);
+    text-shadow: 2px 2px 2px #d24400;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #e45618;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 30px;
+
+    &:hover, &:focus {
+
+      @include gradient-vertical(darken(#fc8a29, 5%),darken(#f8761f, 5%));
+      color: #ffffff;
+
+    }
+
+    &:active {
+
+      @include gradient-vertical(darken(#fc8a29, 10%),darken(#f8761f, 10%));
+
+    }
+
+  }
+
+  &__resort {
+
+    & > .dropdown-toggle > .bs-caret > .caret {
+
+      background: url('../images/resort@1x.png') no-repeat;
+      background-size: 19px 25px;
+      width: 19px;
+      height: 25px;
+      border: none;
+      margin-top: -13px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/resort@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/resort.svg');
+
+      }
+
+    }
+
+  }
+
+  &__room {
+
+    & > .dropdown-toggle > .bs-caret > .caret {
+
+      background: url('../images/room@1x.png') no-repeat;
+      background-size: 23px 19px;
+      width: 23px;
+      height: 19px;
+      border: none;
+      margin-top: -9px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/room@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/room.svg');
+
+      }
+
+    }
+
+  }
+
+  &__date {
+
+    position: relative;
+
+    &::before {
+
+      content: '';
+      background: url('../images/date@1x.png') no-repeat;
+      background-size: 21px 21px;
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      margin-top: -10px;
+      display: inline-block;
+
+    }
+
+  }
+
+  &__adults {
+
+    & > .dropdown-toggle > .bs-caret > .caret {
+
+      background: url('../images/adults@1x.png') no-repeat;
+      background-size: 11px 25px;
+      width: 11px;
+      height: 25px;
+      border: none;
+      margin-top: -12px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/adults@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/adults.svg');
+
+      }
+
+    }
+
+  }
+
+  &__adults {
+
+    & > .dropdown-toggle > .bs-caret > .caret {
+
+      background: url('../images/adults@1x.png') no-repeat;
+      background-size: 11px 25px;
+      width: 11px;
+      height: 25px;
+      border: none;
+      margin-top: -12px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/adults@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/adults.svg');
+
+      }
+
+    }
+
+  }
+
+  &__children {
+
+    & > .dropdown-toggle > .bs-caret > .caret {
+
+      background: url('../images/children@1x.png') no-repeat;
+      background-size: 16px 22px;
+      width: 16px;
+      height: 22px;
+      border: none;
+      margin-top: -11px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/children@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/children.svg');
+
+      }
+
+    }
 
   }
 

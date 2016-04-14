@@ -154,6 +154,7 @@ gulp.task('serve:test', ['scripts'], () => {
 
 // inject bower components
 gulp.task('wiredep', () => {
+
   gulp.src('app/styles/*.scss')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
@@ -162,7 +163,11 @@ gulp.task('wiredep', () => {
 
   gulp.src('app/*.jade')
     .pipe(wiredep({
-      ignorePath: /^(\.\.\/)*\.\./
+      ignorePath: /^(\.\.\/)*\.\./,
+      exclude: [
+        '/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
+        '/bower_components/bootstrap-sass/sassets/stylesheets/bootstrap.scss'
+      ]
     }))
     .pipe(gulp.dest('app'));
 });
