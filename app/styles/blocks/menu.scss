@@ -15,6 +15,12 @@
     border-bottom-left-radius: $border-radius-base;
     border-bottom-right-radius: $border-radius-base;
 
+    @media (max-width: $screen-sm-max) {
+
+      margin-left: 10px;
+
+    }
+
     &--active {
 
       background-color: $brand-primary;
