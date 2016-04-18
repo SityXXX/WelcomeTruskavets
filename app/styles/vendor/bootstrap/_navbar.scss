@@ -12,7 +12,7 @@
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  //border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -415,9 +415,11 @@
     color: $navbar-default-color;
   }
 
-  /*.navbar-nav {
+  .navbar-nav {
     > li > a {
-      color: $navbar-default-link-color;
+      color: $brand-primary;
+      border-bottom-right-radius: $border-radius-base;
+      border-bottom-left-radius: $border-radius-base;
 
       &:hover,
       &:focus {
@@ -429,8 +431,9 @@
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+        color: #ffffff;
+        background-color: $brand-primary;
+        text-decoration: none;
       }
     }
     > .disabled > a {
@@ -441,7 +444,7 @@
         background-color: $navbar-default-link-disabled-bg;
       }
     }
-  }*/
+  }
 
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
@@ -475,7 +478,7 @@
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
-          color: $navbar-default-link-color;
+          color: #ffffff;
           &:hover,
           &:focus {
             color: $navbar-default-link-hover-color;

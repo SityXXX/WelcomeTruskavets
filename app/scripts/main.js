@@ -4,13 +4,11 @@ $('#resort, #room').selectpicker({
 });
 
 $('#adults, #children').selectpicker({
-  width: '100%',
+  width: '100%'
 });
 
 
 $('.input-daterange').datepicker({
-
   startDate: 'today',
   language: $('html').attr('lang')
-
 });

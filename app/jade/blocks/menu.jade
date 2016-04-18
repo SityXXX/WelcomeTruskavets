@@ -1,7 +1,7 @@
-nav.navbar.navbar-default
+nav.navbar.navbar-default.menu
   .container
-    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
-      span.sr-only Toggle navigation
+    button.navbar-toggle.collapsed.menu__collapse-btn(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+      span.sr-only Меню
       span.icon-bar
       span.icon-bar
       span.icon-bar
@@ -9,7 +9,7 @@ nav.navbar.navbar-default
     include language
 
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      ul.nav.navbar-nav
+      ul.nav.navbar-nav.menu__list
         li.active.menu__item.menu__item--active
           a(href='#') Головна
         li.menu__item

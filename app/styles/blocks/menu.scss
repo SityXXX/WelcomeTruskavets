@@ -1,35 +1,29 @@
 .menu {
 
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  float: left;
+  margin-bottom: 30px;
+  margin-bottom: 10vh;
+  font-size: 16px;
+
+  &__list {
+
+
+
+  }
 
   &__item {
 
-    display: inline-block;
-    margin-left: 40px;
-    padding: 15px;
-    color: $brand-primary;
-    font-size: 16px;
-    border-bottom-left-radius: $border-radius-base;
     border-bottom-right-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-base;
 
-    @media (max-width: $screen-sm-max) {
+    &:not(:last-child) {
 
-      margin-left: 10px;
+      margin-right: 25px;
 
     }
 
-    &--active {
+    & > a {
 
-      background-color: $brand-primary;
-
-      & > span {
-
-        color: #ffffff;
-
-      }
+      display: inline;
 
     }
 
