@@ -1,6 +1,13 @@
 .language {
-  
+
   margin-top: 15px;
+  float: right;
+
+  @media (max-width: $screen-xs-max) {
+
+    float: left;
+
+  }
 
   & > a {
 
@@ -23,6 +30,18 @@
 
       display: inline;
       padding: 0;
+
+      @media (max-width: $screen-xs-max) {
+
+        color: #ffffff;
+
+        &:hover {
+
+          color: #ffffff;
+
+        }
+
+      }
 
       &:hover {
 

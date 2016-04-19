@@ -1,23 +1,9 @@
 .search {
 
-  text-align: center;
   position: relative;
-  width: 50%;
   margin: 40px auto;
   margin-top: 5vh;
   margin-bottom: 8vh;
-
-  @media (max-width: $screen-xs-max) {
-
-    width: 100%;
-
-  }
-
-  @media (max-width: $screen-sm-max) {
-
-    width: 70%;
-
-  }
 
   &:after {
 

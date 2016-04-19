@@ -4,26 +4,49 @@
   margin-bottom: 10vh;
   font-size: 16px;
 
-  &__list {
+  @media (max-width: $screen-xs-max) {
 
-
+    margin-bottom: 5px;
+    margin-bottom: 2vh;
 
   }
 
-  &__item {
-
-    border-bottom-right-radius: $border-radius-base;
-    border-bottom-left-radius: $border-radius-base;
+  & &__item {
 
     &:not(:last-child) {
 
-      margin-right: 25px;
+      margin-right: 30px;
+
+      @media (max-width: $screen-sm-max) {
+
+        margin-right: 17px;
+
+      }
+
+      @media (max-width: $screen-xs-max) {
+
+        margin-right: 0;
+
+      }
 
     }
 
-    & > a {
+    & > .menu__link {
 
-      display: inline;
+      @media (max-width: $screen-xs-max) {
+
+        color: #ffffff;
+        border-radius: 0;
+        text-decoration: none;
+
+        &:hover {
+
+          color: #ffffff;
+          background-color: $brand-primary;
+
+        }
+
+      }
 
     }
 

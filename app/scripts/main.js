@@ -10,5 +10,10 @@ $('#adults, #children').selectpicker({
 
 $('.input-daterange').datepicker({
   startDate: 'today',
-  language: $('html').attr('lang')
+  language: $('html').attr('lang'),
+  templates: {
+    leftArrow: '&#8249;',
+    rightArrow: '&#8250;'
+  },
+  todayBtn: true
 });

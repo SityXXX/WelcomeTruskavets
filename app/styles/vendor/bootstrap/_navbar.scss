@@ -193,7 +193,7 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: $navbar-padding-horizontal;
+  //margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
@@ -398,6 +398,7 @@
 
   @media (max-width: $screen-xs-max) {
     background-color: $brand-primary;
+    background-color: rgba(9,80,113,0.75);
   }
   //background-color: $navbar-default-bg;
   //border-color: $navbar-default-border;
@@ -448,18 +449,28 @@
 
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
+
+    .icon-bar {
+      background-color: #ffffff;
+    }
+
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: #ffffff;
+
+      .icon-bar {
+
+        background-color: $brand-primary;
+
+      }
+
     }
-    .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
-    }
+
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border-color: darken($brand-primary, 5%);
   }
 
   // Dropdown menu items

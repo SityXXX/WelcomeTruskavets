@@ -1,9 +1,48 @@
 .page-header {
 
-  height: 100vh;
   min-height: 700px;
-  background: url('../images/header-bg.jpg') 0 50% no-repeat;
+  min-height: 100vh;
+  background: url('../images/header-bg.jpg') 50% 0 no-repeat;
   background-size: cover;
+
+  @media (max-width: $screen-md-max) {
+
+    background-image: url('../images/header-bg-md@1x.jpg');
+    background-size: 1199px 1080px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/header-bg-md@2x.jpg');
+
+    }
+
+  }
+
+  @media (max-width: $screen-sm-max) {
+
+    background-image: url('../images/header-bg-sm@1x.jpg');
+    background-size: 991px 1080px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/header-bg-sm@2x.jpg');
+
+    }
+
+  }
+
+  @media (max-width: $screen-xs-max) {
+
+    background-image: url('../images/header-bg-xs@1x.jpg');
+    background-size: 767px 1080px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/header-bg-xs@2x.jpg');
+
+    }
+
+  }
 
   &__menu-lang {
 
