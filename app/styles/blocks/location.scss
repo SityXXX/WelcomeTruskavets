@@ -1,0 +1,23 @@
+.location {
+
+  color: #767676;
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  line-height: 1.1;
+
+  &::before {
+
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    width: 12px;
+    height: 16px;
+    background-image: url('../images/location@1x.png');
+
+  }
+
+}
