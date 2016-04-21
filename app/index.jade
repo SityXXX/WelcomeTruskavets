@@ -32,8 +32,38 @@ html.no-js(lang='uk')
 
     body
       include jade/blocks/page-header
+      include jade/blocks/breadcrumbs
+      main
+
+        header.page-heading
+          h1.page-heading__header Санаторії
+          .page-heading__subheader Тут ви знайдете кращі санаторії трускавця
+
+        .resorts
+          .container
+            .row
+              .col-sm-4.col-md-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+
+
+
 
       // build:js scripts/main.js
       script(src='scripts/main.js')
+      script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsJsJTP-GBsnMfTsGzYoh3KH6iTmWU7hw&callback=initMap")
       // endbuild
 

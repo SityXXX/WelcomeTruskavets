@@ -1,0 +1,46 @@
+.page-heading {
+
+  text-align: center;
+  margin: 20px 0;
+
+
+  &__header {
+
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-weight: 100;
+
+    @media (max-width: $screen-sm-max) {
+
+      font-size: 32px;
+
+    }
+
+    &::after {
+
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #fc8929;
+      width: 20%;
+      margin: 10px auto 0 auto;
+
+      @media (max-width: $screen-xs-max) {
+
+        width: 40%;
+
+      }
+
+    }
+
+  }
+
+  &__subheader {
+
+    font-size: 18px;
+    color: #8b8b8b;
+
+  }
+
+}

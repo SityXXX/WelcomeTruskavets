@@ -1,0 +1,83 @@
+.resort {
+
+  @include border-top-radius($border-radius-base);
+  @include border-bottom-radius($border-radius-base);
+  overflow: hidden;
+
+  &__img-wrap {
+
+    height: 170px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+
+    &::before {
+
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      background-color: rgba(22,99,144,0.75);
+
+    }
+
+    & img {
+
+      min-height: 100%;
+      max-height: 100%;
+      width: auto;
+
+    }
+
+  }
+
+  &__info-wrap {
+
+    padding: 20px 5px 0 5px;
+
+  }
+
+  &__name {
+
+    font-size: 16px;
+    margin: 0;
+
+  }
+
+  &__price {
+
+    font-size: 30px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 1;
+    font-weight: 500;
+    float: right;
+    position: relative;
+
+    &-at, &-currency, &-unit {
+
+      font-size: 15px;
+      font-weight: 400;
+      font-variant: all-small-caps;
+      line-height: 1;
+
+    }
+
+    &-currency {
+
+      border-bottom: 1px solid #000;
+
+    }
+
+  }
+
+  &__currency-wrap {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+}

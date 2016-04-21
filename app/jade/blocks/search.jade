@@ -7,7 +7,22 @@
           .search__result-img-wrap
             img(src='../images/search-img/rixos@1x.jpg')
           .search__result-info-wrap
-            a(href='#').location Трускавець
+            a(href='#' data-toggle="modal" data-target="#myModal").location Трускавець
+            //Modal
+            .modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+              .modal-dialog(role="document")
+                .modal-content
+                  .modal-header
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true") &times;
+                    h4.modal-title#myModalLabel Modal
+
+                  .modal-body#rixos-location(style='height: 500px')
+
+
+                  .modal-footer
+                    button.btn.btn-default(type="button" data-dismiss="modal") Close
+                    button.btn.btn-primary(type="button") Save changes
             h1.search__result-heading
               a(href='#') Rixos Прикарпаття
             .stars.stars--5
