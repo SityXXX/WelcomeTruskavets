@@ -19,12 +19,14 @@ html.no-js(lang='uk')
 
     //build:js scripts/vendor.js
     //bower:js
+    script(src='/bower_components/modernizr/modernizr.js')
     script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
-    script(src='/bower_components/modernizr/modernizr.js')
     script(src='/bower_components/bootstrap-select/dist/js/bootstrap-select.js')
+    script(src='/bower_components/bootstrap-select/dist/js/i18n/defaults-ua_UA.js')
     script(src='/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')
     script(src='/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js')
+    script(src='/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js')
     //endbower
     //endbuild
 
@@ -37,10 +39,10 @@ html.no-js(lang='uk')
           h1.page-heading__header Санаторії
           .page-heading__subheader Тут ви знайдете кращі санаторії трускавця
 
-        .resorts
+        .resorts-page__resorts-wrap
           .container
             .row
-              .col-sm-4.col-md-3
+              .col-sm-4.col-lg-3
                 article.resort
                   .resort__img-wrap
                     a(href='#')
@@ -56,7 +58,175 @@ html.no-js(lang='uk')
                         .resort__price-currency грн
                         .resort__price-unit чол
                     .stars.stars--5
-
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__wrap
+                    .resort__img-wrap
+                      a(href='#')
+                        img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                    .resort__info-wrap
+                      a.location(href='#') Трускавець
+                      h1.resort__name
+                        a(href='#') Rixos Прикарпаття
+                      .clearfix
+                      .resort__price
+                        <span class='resort__price-at'>від</span> 5000
+                        .resort__currency-wrap
+                          .resort__price-currency грн
+                          .resort__price-unit чол
+                      .stars.stars--5
+                      .clearfix
+                      p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                      .resort__btn-wrap.row
+                        .col-md-6
+                          a.btn.resort__more-btn(href='#') Детальніше
+                        .col-md-6
+                          a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
+              .col-sm-4.col-lg-3
+                article.resort
+                  .resort__img-wrap
+                    a(href='#')
+                      img(src='../images/resorts/rixos.jpg' alt='Rixos Прикарпаття')
+                  .resort__info-wrap
+                    a.location(href='#') Трускавець
+                    h1.resort__name
+                      a(href='#') Rixos Прикарпаття
+                    .clearfix
+                    .resort__price
+                      <span class='resort__price-at'>від</span> 5000
+                      .resort__currency-wrap
+                        .resort__price-currency грн
+                        .resort__price-unit чол
+                    .stars.stars--5
+                    .clearfix
+                    p.resort__description Загальний опис будівлі та номерного фонду: 7-миповерховий комплекс з аквапарком та СПА
+                    .resort__btn-wrap.row
+                      .col-md-6
+                        a.btn.resort__more-btn(href='#') Детальніше
+                      .col-md-6
+                        a.btn.resort__booking-btn(href='#') Бронювати
 
 
 

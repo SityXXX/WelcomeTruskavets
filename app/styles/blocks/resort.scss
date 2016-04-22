@@ -2,7 +2,36 @@
 
   @include border-top-radius($border-radius-base);
   @include border-bottom-radius($border-radius-base);
+  border-bottom: 2px solid #c8c8c8;
   overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 1px;
+
+  .resort__btn-wrap {
+
+    display: none;
+
+  }
+
+  &:hover {
+
+    .resort__wrap {
+
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+
+    }
+
+    .resort__btn-wrap {
+
+      display: block;
+
+    }
+
+  }
 
   &__img-wrap {
 
@@ -34,7 +63,8 @@
 
   &__info-wrap {
 
-    padding: 20px 5px 0 5px;
+    padding: 20px 10px 10px 10px;
+    background-color: #ffffff;
 
   }
 
@@ -42,6 +72,7 @@
 
     font-size: 16px;
     margin: 0;
+    margin-bottom: 15px;
 
   }
 
@@ -77,6 +108,73 @@
     position: absolute;
     right: 0;
     top: 0;
+
+  }
+
+  & .stars::before{
+
+    left: 5px;
+
+  }
+
+  &__description {
+
+    margin: 10px 0;
+    text-align: justify;
+
+  }
+
+  &__more-btn, &__booking-btn {
+
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+  }
+
+  &__booking-btn {
+
+    @include gradient-vertical(#fc8a29,#f8761f);
+    text-shadow: 2px 2px 2px #d24400;
+    border-bottom: 2px solid #e45618;
+
+    &:hover, &:focus {
+
+      @include gradient-vertical(darken(#fc8a29, 5%),darken(#f8761f, 5%));
+      color: #ffffff;
+
+    }
+
+    &:active {
+
+      @include gradient-vertical(darken(#fc8a29, 10%),darken(#f8761f, 10%));
+
+    }
+
+  }
+
+  &__more-btn {
+
+    @include gradient-vertical(#51d2e6, #20c5df);
+    border-bottom: 2px solid #0098af;
+    text-shadow: 1px 1px 1px #1aa4ba;
+
+    &:hover, &:focus {
+
+      @include gradient-vertical(darken(#51d2e6, 5%),darken(#20c5df, 5%));
+      color: #ffffff;
+
+    }
+
+    &:active {
+
+      @include gradient-vertical(darken(#51d2e6, 10%),darken(#20c5df, 10%));
+
+    }
 
   }
 

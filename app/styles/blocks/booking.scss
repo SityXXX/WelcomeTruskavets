@@ -2,20 +2,6 @@
 
   text-align: left;
 
-  .row {
-
-    margin-left: 0;
-    margin-right: 0;
-
-  }
-
-  [class^='col-'] {
-
-    padding-left: 3px;
-    padding-right: 3px;
-
-  }
-
   .form-group {
 
     @media (min-width: $screen-md-min) {
@@ -316,6 +302,12 @@
       }
 
     }
+
+  }
+
+  & .stars::before {
+
+    right: 15px;
 
   }
 
