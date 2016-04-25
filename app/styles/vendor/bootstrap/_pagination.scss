@@ -2,26 +2,32 @@
 // Pagination (multiple pages)
 // --------------------------------------------------
 .pagination {
-  display: inline-block;
+  text-align: center;
+  font-size: 0;
   padding-left: 0;
   margin: $line-height-computed 0;
   border-radius: $border-radius-base;
 
   > li {
-    display: inline; // Remove list-style and block-level defaults
+    display: inline-block; // Remove list-style and block-level defaults
+    margin: 0 3px;
     > a,
     > span {
+      font-size: $font-size-base+3;
       position: relative;
       float: left; // Collapse white-space
       padding: $padding-base-vertical $padding-base-horizontal;
       line-height: $line-height-base;
       text-decoration: none;
       color: $pagination-color;
-      background-color: $pagination-bg;
-      border: 1px solid $pagination-border;
-      margin-left: -1px;
+      @include gradient-vertical(#30bbdc, #07b0d6);
+      //border: 1px solid $pagination-border;
+      @include border-bottom-radius($border-radius-base);
+      @include border-top-radius($border-radius-base);
+      min-width: 44px;
+      @include box-shadow(1px 1px 3px 0 rgba(0,0,0,0.3));
     }
-    &:first-child {
+    /*&:first-child {
       > a,
       > span {
         margin-left: 0;
@@ -34,6 +40,7 @@
         @include border-right-radius($border-radius-base);
       }
     }
+    */
   }
 
   > li > a,
@@ -43,7 +50,7 @@
       z-index: 2;
       color: $pagination-hover-color;
       background-color: $pagination-hover-bg;
-      border-color: $pagination-hover-border;
+      background-image: none;
     }
   }
 
@@ -55,7 +62,9 @@
       z-index: 3;
       color: $pagination-active-color;
       background-color: $pagination-active-bg;
-      border-color: $pagination-active-border;
+      border: 1px solid $pagination-active-border;
+      background-image: none;
+      @include box-shadow(none);
       cursor: default;
     }
   }

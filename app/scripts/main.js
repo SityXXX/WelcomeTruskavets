@@ -42,4 +42,13 @@ function initMap() {
     zoom: 8
   });
 }
+
+$('.resort').hover(
+  function(){
+    $(this).css('overflow','visible');
+  },
+  function() {
+    $(this).css('overflow','hidden');
+  }
+);
 //# sourceMappingURL=main.js.map
