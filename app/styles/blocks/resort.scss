@@ -2,11 +2,39 @@
 
   @include border-top-radius($border-radius-base);
   @include border-bottom-radius($border-radius-base);
-  border-bottom: 2px solid #c8c8c8;
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
-  min-height: 1px;
+  min-height: 350px;
+
+  &:hover {
+
+    overflow: visible;
+
+    .resort__wrap {
+
+      @include box-shadow(0 20px 10px 0 rgba(0,0,0,0.2));
+      width: 100%;
+      position: absolute;
+
+    }
+
+  }
+
+  &__wrap {
+
+    border-bottom: 2px solid #c8c8c8;
+    @include border-bottom-radius($border-radius-base);
+    z-index: 2;
+
+    &-inner {
+
+      position: relative;
+      @include border-bottom-radius($border-radius-base);
+
+    }
+
+  }
 
   .resort__btn-wrap {
 
@@ -14,27 +42,9 @@
 
   }
 
-  &:hover {
-
-    .resort__wrap {
-
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-      position: absolute;
-      z-index: 5;
-      width: 100%;
-
-    }
-
-    .resort__btn-wrap {
-
-      display: block;
-
-    }
-
-  }
-
   &__img-wrap {
 
+    @include border-bottom-radius($border-radius-base);
     height: 170px;
     overflow: hidden;
     text-align: center;
