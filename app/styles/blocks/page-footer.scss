@@ -1,5 +1,150 @@
 .page-footer {
 
   background-color: #3280ac;
+  color: #ffffff;
+
+  &__block {
+
+    padding: 30px 0 40px 0;
+
+    &--filled {
+
+      background-color: #1a658f;
+
+    }
+
+    &-heading {
+
+      padding: 3px 15px;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      background-color: #1a658f;
+      border-radius: $border-radius-base;
+      margin-bottom: 15px;
+
+    }
+
+  }
+
+  &__info {
+
+    padding: 0 0 0 15px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    list-style: none;
+
+    &-item {
+
+      margin-bottom: 25px;
+      padding-left: 30px;
+
+    }
+
+  }
+
+  &__tel {
+
+    background: url('../images/tel@1x.png') 0 50% no-repeat;
+    background-size: 19px 19px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/tel@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/tel.svg');
+
+    }
+
+  }
+
+  &__skype {
+
+    background: url('../images/skype@1x.png') 0 50% no-repeat;
+    background-size: 19px 19px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/skype@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/skype.svg');
+
+    }
+
+  }
+
+  &__skype {
+
+    background: url('../images/skype@1x.png') 0 50% no-repeat;
+    background-size: 19px 19px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/skype@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/skype.svg');
+
+    }
+
+  }
+
+  &__viber {
+
+    background: url('../images/viber@1x.png') 0 50% no-repeat;
+    background-size: 19px 19px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/viber@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/viber.svg');
+
+    }
+
+  }
+
+  &__email {
+
+    background: url('../images/email@1x.png') 0 50% no-repeat;
+    background-size: 19px 19px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/email@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/email.svg');
+
+    }
+
+  }
+
+  &__post-footer {
+
+    background: url('../images/dash-bg-dark-blue@1x.png') #1a658f 0 0 repeat-x;
+    padding: 8px 0 5px;
+    margin-top: -3px;
+
+  }
 
 }

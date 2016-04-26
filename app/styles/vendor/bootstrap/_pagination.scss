@@ -27,20 +27,6 @@
       min-width: 44px;
       @include box-shadow(1px 1px 3px 0 rgba(0,0,0,0.3));
     }
-    /*&:first-child {
-      > a,
-      > span {
-        margin-left: 0;
-        @include border-left-radius($border-radius-base);
-      }
-    }
-    &:last-child {
-      > a,
-      > span {
-        @include border-right-radius($border-radius-base);
-      }
-    }
-    */
   }
 
   > li > a,

@@ -1,17 +1,14 @@
 .menu {
 
-  margin-bottom: 30px;
-  margin-bottom: 10vh;
-  font-size: 16px;
+  .page-footer & {
 
-  @media (max-width: $screen-xs-max) {
-
-    margin-bottom: 5px;
-    margin-bottom: 2vh;
+    margin: 0 0 0 15px;
+    padding: 0;
+    list-style: none;
 
   }
 
-  & &__item {
+  &__item {
 
     &:not(:last-child) {
 
@@ -31,20 +28,39 @@
 
     }
 
-    & > .menu__link {
+    .page-footer & {
 
-      @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+
+    }
+
+  }
+
+  &__link {
+
+    @media (max-width: $screen-xs-max) {
+
+      color: #ffffff;
+      border-radius: 0;
+      text-decoration: none;
+
+      &:hover {
 
         color: #ffffff;
-        border-radius: 0;
-        text-decoration: none;
+        background-color: $brand-primary;
 
-        &:hover {
+      }
 
-          color: #ffffff;
-          background-color: $brand-primary;
+    }
 
-        }
+    .page-footer & {
+
+      color: #ffffff;
+      font-size: 15px;
+
+      &:active {
+
+        color: rgba(255,255,255,0.5);
 
       }
 

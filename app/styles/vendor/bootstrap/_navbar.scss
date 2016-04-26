@@ -9,13 +9,23 @@
 // other navbar variations.
 
 .navbar {
+
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
-  //border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
+
+  margin-bottom: 30px;
+  margin-bottom: 10vh;
+  font-size: 16px;
+
+  @media (max-width: $screen-xs-max) {
+
+    margin-bottom: 5px;
+    margin-bottom: 2vh;
+
+  }
 
   @media (min-width: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
@@ -417,15 +427,35 @@
   }
 
   .navbar-nav {
+
     > li > a {
+
       color: $brand-primary;
       border-bottom-right-radius: $border-radius-base;
       border-bottom-left-radius: $border-radius-base;
 
+      @media (max-width: $screen-xs-max) {
+
+        border-radius: 0;
+        color: #ffffff;
+        text-decoration: underline;
+
+      }
+
       &:hover,
       &:focus {
+
         color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
+
+        @media (max-width: $screen-xs-max) {
+
+          background-color: $brand-primary;
+          color: #ffffff;
+          text-decoration: none;
+
+        }
+
       }
     }
     > .active > a {

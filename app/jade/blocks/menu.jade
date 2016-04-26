@@ -1,6 +1,6 @@
-nav.navbar.navbar-default.menu
+nav.navbar.navbar-default
   .container
-    button.navbar-toggle.collapsed.menu__collapse-btn(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+    button.navbar-toggle.collapsed.menu__collapse-btn(type="button" data-toggle="collapse" data-target="#collaps-menu" aria-expanded="false")
       span.sr-only Меню
       span.icon-bar
       span.icon-bar
@@ -8,10 +8,10 @@ nav.navbar.navbar-default.menu
 
     include language
 
-    .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      ul.nav.navbar-nav.menu__list
+    .collapse.navbar-collapse#collaps-menu
+      ul.nav.navbar-nav.menu
         li.active.menu__item.menu__item--active
-          a.menu__link(href='#') Головна
+          span Головна
         li.menu__item
           a.menu__link(href='#') Трускавець
         li.menu__item
