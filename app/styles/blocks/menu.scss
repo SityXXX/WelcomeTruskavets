@@ -1,10 +1,22 @@
 .menu {
 
-  .page-footer & {
+  margin: 0;
+  padding: 0 0 0 15px;
+  list-style: none;
+  color: #ffffff;
+  font-size: 15px;
 
-    margin: 0 0 0 15px;
+  .page-header & {
+
+    font-size: 16px;
     padding: 0;
-    list-style: none;
+
+    @media (max-width: $screen-xs-max) {
+
+      margin-left: -5px;
+      margin-right: -5px;
+
+    }
 
   }
 
@@ -12,51 +24,89 @@
 
     &:not(:last-child) {
 
-      margin-right: 30px;
+      margin-bottom: 8px;
 
-      @media (max-width: $screen-sm-max) {
+    }
 
-        margin-right: 17px;
+    .page-header & {
 
-      }
+      margin-bottom: 0;
+      display: inline-block;
 
       @media (max-width: $screen-xs-max) {
 
-        margin-right: 0;
+        display: block;
+
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+        margin-right: 15px;
+
+      }
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+        margin-right: 20px;
+
+      }
+
+      @media (min-width: $screen-lg-min) {
+
+        margin-right: 35px;
 
       }
 
     }
 
-    .page-footer & {
+    &--active {
 
-      margin-bottom: 15px;
+      @include border-bottom-radius($border-radius-base);
 
-    }
+      @media (max-width: $screen-xs-max) {
 
-  }
+        @include border-bottom-radius(0);
 
-  &__link {
+      }
 
-    @media (max-width: $screen-xs-max) {
+      span {
 
-      color: #ffffff;
-      border-radius: 0;
-      text-decoration: none;
+        .page-header & {
 
-      &:hover {
+          display: block;
+          padding: 15px;
 
-        color: #ffffff;
+        }
+
+      }
+
+      .page-header & {
+
         background-color: $brand-primary;
 
       }
 
     }
 
-    .page-footer & {
+    & > a {
 
       color: #ffffff;
-      font-size: 15px;
+
+      &:hover, &:focus {
+
+        color: #ffffff;
+
+        .page-header & {
+
+          @media (max-width: $screen-xs-max) {
+
+            background-color: $brand-primary;
+
+          }
+
+        }
+
+      }
 
       &:active {
 
@@ -64,8 +114,24 @@
 
       }
 
+      .page-header & {
+
+        padding: 15px;
+        display: block;
+        color: $brand-primary;
+
+        @media (max-width: $screen-xs-max) {
+
+          color: #ffffff;
+
+        }
+
+      }
+
     }
 
   }
+
+
 
 }

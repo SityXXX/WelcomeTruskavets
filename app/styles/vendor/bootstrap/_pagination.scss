@@ -5,12 +5,12 @@
   text-align: center;
   font-size: 0;
   padding-left: 0;
-  margin: $line-height-computed 0;
+  margin: 50px 0;
   border-radius: $border-radius-base;
 
   > li {
     display: inline-block; // Remove list-style and block-level defaults
-    margin: 0 3px;
+    margin: 0 3px 10px;
     > a,
     > span {
       font-size: $font-size-base+3;
