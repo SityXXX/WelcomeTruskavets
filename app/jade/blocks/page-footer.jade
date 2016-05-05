@@ -1,7 +1,16 @@
 footer.page-footer
   .container
     .row
-      .col-md-4.col-lg-3
+      .col-md-4.col-md-push-8.col-lg-6.col-lg-push-6
+        .page-footer__block
+          .page-footer__block-heading Карта
+
+      .col-md-4.col-lg-3.col-lg-pull-3
+        .page-footer__block
+          .page-footer__block-heading Віддих
+          include menu
+
+      .col-md-4.col-md-pull-8.col-lg-3.col-lg-pull-9
         .page-footer__block.page-footer__block--filled
           .page-footer__block-heading Контакти
           ul.page-footer__info
@@ -12,35 +21,18 @@ footer.page-footer
               a(href='mailto:booking@welcometour.com.ua') booking@welcometour.com.ua
 
 
-      .col-md-4.col-lg-3
-        .page-footer__block
-          .page-footer__block-heading Віддих
-          ul.menu
-            li.menu__item.menu__item--active
-              span Головна
-            li.menu__item
-              a.menu__link(href='#') Трускавець
-            li.menu__item
-              a.menu__link(href='#') Санаторії
-            li.menu__item
-              a.menu__link(href='#') Діти
-            li.menu__item
-              a.menu__link(href='#') Ціни
-            li.menu__item
-              a.menu__link(href='#') Карта
-            li.menu__item
-              a.menu__link(href='#') Контакти
 
-      .col-md-4.col-lg-6
-        .page-footer__block
-          .page-footer__block-heading Карта
+
+
 
   .page-footer__post-footer
     .container
-      .row
-        .copyright Нечипур Віталій 2106 &copy;
-
-
-
-
+      ul.page-footer__social
+        li.page-footer__social-item
+          a(href='#').page-footer__social-link.page-footer__social-vk Вконтакті
+        li.page-footer__social-item
+          a(href='#').page-footer__social-link.page-footer__social-fb Facebook
+        li.page-footer__social-item
+          a(href='#').page-footer__social-link.page-footer__social-od Однокласники
+      .page-footer__copyright Нечипур Віталій 2106 &copy;
 
