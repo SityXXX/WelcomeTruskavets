@@ -1,5 +1,6 @@
 @import 'scafolding/fonts.scss';
 @import 'vendor/_bootstrap';
+@import 'scafolding/global.scss';
 
 @import 'blocks/page-header';
 @import 'blocks/menu';
@@ -12,6 +13,7 @@
 @import 'blocks/location';
 @import 'blocks/stars';
 @import 'blocks/breadcrumbs';
+@import 'scafolding/global.scss';
 @import 'blocks/page-heading';
 @import 'blocks/resort';
 @import 'blocks/page-description';

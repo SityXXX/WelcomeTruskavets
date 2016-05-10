@@ -6,6 +6,8 @@
   overflow: hidden;
   position: relative;
   height: 360px;
+  border-bottom: 2px solid #c8c8c8;
+  background-color: #fff;
 
   @media (max-width: $screen-xs-max) {
 
@@ -30,7 +32,7 @@
       @include box-shadow(0 0px 13px 0 rgba(0,0,0,0.4));
       //@include border-bottom-radius($border-radius-base);
       //@include border-top-radius($border-radius-base);
-      background-color: #ffffff;
+      border-bottom: 2px solid #c8c8c8;
       z-index: 2;
       overflow: hidden;
       position: absolute;
@@ -47,9 +49,9 @@
 
   &__wrap {
 
-    border-bottom: 2px solid #c8c8c8;
     box-shadow: none;
     z-index: 1;
+    background-color: #ffffff;
 
 
     &-inner {

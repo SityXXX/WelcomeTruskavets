@@ -1,54 +1,38 @@
-'use strict';
+jQuery(document).ready(function() {
 
-$('#resort, #room').selectpicker({
-  width: '100%',
-  liveSearch: true
-});
+  jQuery('.search__field').on('input', function (){
 
-$('#adults, #children').selectpicker({
-  width: '100%'
-});
+    if(jQuery(this).val != '') {
 
-$('.input-daterange').datepicker({
-  startDate: 'today',
-  language: $('html').attr('lang'),
-  templates: {
-    leftArrow: '&#8249;',
-    rightArrow: '&#8250;'
-  },
-  todayBtn: true
-});
+      jQuery('.search__results').css('display', 'block');
 
-$('.search__field').on('input', function (){
+    } else {
 
-  if($(this).val != '') {
+      jQuery('.search__results').css('display', 'none');
 
-    $('.search__results').css('display', 'block');
+    }
 
-  } else {
-
-    $('.search__results').css('display', 'none');
-
-  }
-
-});
-
-$('#myModal').appendTo("body");
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('rixos-location'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
   });
-}
 
-$('.resort').hover(
-  function(){
-    $(this).css('overflow','visible');
-  },
-  function() {
-    $(this).css('overflow','hidden');
+  jQuery('#myModal').appendTo('body');
+
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('rixos-location'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
   }
-);
+
+  jQuery('.resort').hover(
+    function(){
+      jQuery(this).css('overflow','visible');
+    },
+    function() {
+      jQuery(this).css('overflow','hidden');
+    }
+  );
+
+});
+
 //# sourceMappingURL=main.js.map
