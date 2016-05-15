@@ -1,0 +1,21 @@
+<svg id="Objects" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.1 151">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #15596b;
+      }
+
+      .cls-2 {
+        fill: #26b8b6;
+      }
+
+      .cls-3 {
+        fill: #00aca9;
+      }
+    </style>
+  </defs>
+  <title>qresort-stars-bg</title>
+  <polygon class="cls-1" points="6.21 105.7 0 0 189.1 0 182.9 105.7 94.55 151 6.21 105.7"/>
+  <polygon class="cls-2" points="184.09 4.28 178.31 102.75 94.55 144.72 10.79 102.75 5.01 4.28 184.09 4.28"/>
+  <polygon class="cls-3" points="6.01 18.41 10.95 102.61 94.71 144.58 119.67 132.08 6.01 18.41"/>
+</svg>

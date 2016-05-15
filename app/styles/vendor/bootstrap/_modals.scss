@@ -51,8 +51,9 @@
 .modal-content {
   position: relative;
   background-color: $modal-content-bg;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid $modal-content-border-color;
+  padding: 10px 20px;
+  //border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  //border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
@@ -78,7 +79,7 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: $modal-title-padding;
-  border-bottom: 1px solid $modal-header-border-color;
+  //border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
 }
 // Close icon
@@ -89,6 +90,10 @@
 // Title text within header
 .modal-title {
   margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 100;
   line-height: $modal-title-line-height;
 }
 
@@ -96,14 +101,17 @@
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {
   position: relative;
+  background-color: #ffffff;
   padding: $modal-inner-padding;
+  @include border-top-radius($border-radius-base);
+  @include border-bottom-radius($border-radius-base);
 }
 
 // Footer (for actions)
 .modal-footer {
   padding: $modal-inner-padding;
   text-align: right; // right align buttons
-  border-top: 1px solid $modal-footer-border-color;
+  //border-top: 1px solid $modal-footer-border-color;
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons

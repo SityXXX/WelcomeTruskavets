@@ -1,0 +1,63 @@
+.quick-booking {
+
+  &__heading-wrap {
+
+    border-bottom: 1px dotted #cfcfcf;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  &__resort {
+
+    font-size: 25px;
+    font-weight: 500;
+
+  }
+
+  &__resort-img {
+
+    @include border-bottom-radius($border-radius-base);
+    @include border-top-radius($border-radius-base);
+
+  }
+
+  .quick-booking__body {
+
+    padding-right: 120px;
+
+    &::after {
+
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 0;
+      width: 100px;
+      height: 80px;
+      background-image: url('../images/qresort-stars-bg@1x.png');
+      background-repeat: no-repeat;
+      background-size: 100px 80px;
+
+      @media(min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/qresort-stars-bg@2x.png');
+3
+      }
+
+      .svg & {
+
+        background-image: url('../images/qresort-stars-bg.svg');
+
+      }
+
+    }
+
+  }
+
+  .location {
+
+    line-height: 35px;
+
+  }
+
+}

@@ -72,3 +72,24 @@ html.no-js(lang='uk')
       script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsJsJTP-GBsnMfTsGzYoh3KH6iTmWU7hw&callback=initMap")
       // endbuild
 
+      #quickBookingModal.modal.modal--booking.fade(tabindex='-1')
+        .modal-dialog.quick-booking.modal-lg
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal')
+              h4#exampleModalLabel.modal-title Швидке бронювання
+            .modal-body.quick-booking__body.stars.stars--5
+              .row
+                .col-md-6
+                  img.quick-booking__resort-img(src="../images/resorts/rixos.jpg" width="100%")
+                .col-md-6
+                  .quick-booking__heading-wrap.clearfix
+                    .location Трускавець
+                    .quick-booking__resort Риксос Прикарпаття
+                  p.quick-booking__description Загальний опис будівлі та номер-ного фонду:
+                  |7-ми поверховий комплекс з 60 номерами преміум-класу, оснащений ліфтами.
+                  |Загальний опис будівлі та номер-ного фонду: 7-ми
+                  |поверховий комплекс з 60 номерами преміум-класу.
+                  |агальний опис будівлі та номер-ного фонду: 7-ми
+                  |поверховий комплекс з 60 номерами преміум-класу.
+            .modal-footer

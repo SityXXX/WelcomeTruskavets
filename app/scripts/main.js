@@ -33,6 +33,16 @@ jQuery(document).ready(function() {
     }
   );
 
+  jQuery('.resort__booking-btn').each(function(index, element) {
+    jQuery(element).on('click', function(event) {
+      event.preventDefault();
+      var resort = jQuery('.resort__name a').text();
+      var img = jQuery('.resort__img');
+      var description = jQuery()
+      jQuery('#quickBookingModal').modal();
+    });
+  });
+
 });
 
 //# sourceMappingURL=main.js.map

@@ -1,20 +1,21 @@
-@import 'scafolding/fonts.scss';
-@import 'vendor/_bootstrap';
-@import 'scafolding/global.scss';
+@import 'scafolding/fonts';
+@import 'scafolding/global';
 
-@import 'blocks/page-header';
-@import 'blocks/menu';
-@import 'blocks/language';
-@import 'blocks/logo';
-@import 'blocks/phone';
-@import 'blocks/worktime';
-@import 'blocks/search';
+@import 'vendor/bootstrap';
+
 @import 'blocks/booking';
-@import 'blocks/location';
-@import 'blocks/stars';
 @import 'blocks/breadcrumbs';
-@import 'scafolding/global.scss';
-@import 'blocks/page-heading';
-@import 'blocks/resort';
+@import 'blocks/language';
+@import 'blocks/location';
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/quick-booking';
 @import 'blocks/page-description';
 @import 'blocks/page-footer';
+@import 'blocks/page-header';
+@import 'blocks/page-heading';
+@import 'blocks/phone';
+@import 'blocks/resort';
+@import 'blocks/search';
+@import 'blocks/stars';
+@import 'blocks/worktime';
