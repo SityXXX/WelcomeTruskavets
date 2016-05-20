@@ -93,3 +93,19 @@ html.no-js(lang='uk')
                   |агальний опис будівлі та номер-ного фонду: 7-ми
                   |поверховий комплекс з 60 номерами преміум-класу.
             .modal-footer
+              .row
+                input#qresort(type='text' name='resort' value='')
+                .col-sm-4.col-md-3
+                  .form-group
+                    input#name.form-control(type='text' name='name' placeholder='Ваше ім\'я')
+                .col-sm-4.col-md-3
+                  .form-group
+                    input#email.form-control(type='text' name='email' placeholder='Електронна пошта')
+                .col-sm-4.col-md-3
+                  .form-group
+                    input#phone.form-control(type='text' name='phone' placeholder='Номер телефону')
+                .col-sm-4.col-md-3
+                  .form-group
+                    .booking__button-submit-wrap
+                      input#submit.btn.booking__button-submit(type='submit' name='submit' value='Бронювати')
+

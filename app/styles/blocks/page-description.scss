@@ -11,6 +11,18 @@
 
   }
 
+  &__img-wrap {
+
+    text-align: center;
+
+    @media (max-width: $screen-xs-max) {
+
+      margin-bottom: 20px;
+
+    }
+
+  }
+
   &__img {
 
     min-height: 140px;

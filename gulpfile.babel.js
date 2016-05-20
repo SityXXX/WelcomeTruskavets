@@ -9,7 +9,7 @@ import gulpJade from 'gulp-jade';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-gulp.task('jade', ['wiredep'], () => {
+gulp.task('jade', () => {
   return gulp.src('app/*.jade')
       .pipe(gulpJade({
         pretty: true
@@ -28,6 +28,7 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
+    .pipe($.cssnano())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
@@ -98,7 +99,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['jade','styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['wiredep','jade','styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,

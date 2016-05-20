@@ -1,0 +1,38 @@
+.price {
+
+  padding-right: 25px;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+
+  &__price {
+
+    font-weight: 500;
+    font-size: 32px;
+
+  }
+
+  &__from, &__currency, &__unit {
+
+    font-size: 13px;
+    font-weight: 400;
+    font-variant: all-small-caps;
+    line-height: 1;
+
+  }
+
+  &__currency-unit-wrap {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+  &__currency {
+
+    border-bottom: 1px solid #000;
+
+  }
+
+}

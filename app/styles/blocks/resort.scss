@@ -17,6 +17,12 @@
 
   }
 
+  &__wrap {
+
+    width: 100%;
+
+  }
+
   &__btn-wrap {
 
     display: none;
@@ -84,7 +90,9 @@
 
     & img {
 
-      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: 100%;
       height: auto;
 
     }
@@ -106,38 +114,9 @@
 
   }
 
-  &__price {
+  .price {
 
-    font-size: 30px;
-    text-align: right;
-    padding-right: 25px;
-    line-height: 1;
-    font-weight: 500;
     float: right;
-    position: relative;
-
-    &-at, &-currency, &-unit {
-
-      font-size: 15px;
-      font-weight: 400;
-      font-variant: all-small-caps;
-      line-height: 1;
-
-    }
-
-    &-currency {
-
-      border-bottom: 1px solid #000;
-
-    }
-
-  }
-
-  &__currency-wrap {
-
-    position: absolute;
-    right: 0;
-    top: 0;
 
   }
 

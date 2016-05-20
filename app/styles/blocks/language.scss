@@ -1,6 +1,5 @@
 .language {
 
-  margin-top: 15px;
   float: right;
 
   @media (max-width: $screen-xs-max) {
@@ -9,47 +8,53 @@
 
   }
 
-  & > a {
+  .dropdown-menu {
 
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1.2;
-    border-bottom: 1px dashed #ffffff;
-
-  }
-
-  & > .dropdown-menu {
-
+    border-radius: 0;
+    border: 0;
     min-width: 0;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
 
-    & a {
+    li {
 
-      display: inline;
-      padding: 0;
+      a {
 
-      @media (max-width: $screen-xs-max) {
-
-        color: #ffffff;
-
-        &:hover {
-
-          color: #ffffff;
-
-        }
-
-      }
-
-      &:hover {
-
-        background-color: transparent;
+        padding: 16px 14px;
 
       }
 
     }
+
+  }
+
+}
+
+.btn-language {
+
+  padding: 16px 14px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+
+  @media (max-width: $screen-xs-max) {
+
+    color: #ffffff;
+
+    &:hover {
+
+      color: #ffffff;
+
+    }
+
+  }
+
+  &:active, .open & {
+
+    @include box-shadow(none);
+    background-color: $brand-primary;
+    color: #ffffff;
 
   }
 

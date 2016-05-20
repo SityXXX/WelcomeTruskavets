@@ -103,13 +103,14 @@
   position: relative;
   background-color: #ffffff;
   padding: $modal-inner-padding;
+  margin-bottom: 10px;
   @include border-top-radius($border-radius-base);
   @include border-bottom-radius($border-radius-base);
 }
 
 // Footer (for actions)
 .modal-footer {
-  padding: $modal-inner-padding;
+  //padding: $modal-inner-padding;
   text-align: right; // right align buttons
   //border-top: 1px solid $modal-footer-border-color;
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
