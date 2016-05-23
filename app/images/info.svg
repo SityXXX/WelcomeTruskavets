@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 45.999 45.999" style="enable-background:new 0 0 45.999 45.999;" xml:space="preserve">
-	<path fill="#3280ac" d="M39.264,6.736c-8.982-8.981-23.545-8.982-32.528,0c-8.982,8.982-8.981,23.545,0,32.528c8.982,8.98,23.545,8.981,32.528,0    C48.245,30.281,48.244,15.719,39.264,6.736z M25.999,33c0,1.657-1.343,3-3,3s-3-1.343-3-3V21c0-1.657,1.343-3,3-3s3,1.343,3,3V33z     M22.946,15.872c-1.728,0-2.88-1.224-2.844-2.735c-0.036-1.584,1.116-2.771,2.879-2.771c1.764,0,2.88,1.188,2.917,2.771 C25.897,14.648,24.746,15.872,22.946,15.872z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 127.56 127.56"> <defs> <style>
+      .a {
+        fill: url(#a);
+      }
+
+      .b {
+        fill: #fff;
+      }</style> <lineargradient id="a" data-name="Градієнт без назви 30" x1="116.03" y1="100.37" x2="11.53" y2="27.19" gradientunits="userSpaceOnUse"> <stop offset="0" stop-color="#fc8929" /><stop offset="0.5" stop-color="#fc8929" /><stop offset="0.5" stop-color="#ff7400" /><stop offset="1" stop-color="#ff7400" /> </lineargradient> </defs> <title> info </title> <circle class="a" cx="63.78" cy="63.78" r="63.78" /> <g> <path class="b" d="M63.88,16.55A47.23,47.23,0,1,0,111,63.88,47.44,47.44,0,0,0,63.88,16.55h0Zm0,85.9a38.58,38.58,0,1,1,38.58-38.58,38.61,38.61,0,0,1-38.58,38.58h0Zm0,0" /><path class="b" d="M70.24,80.78l-4,1.79,5.17-26.45a3.74,3.74,0,0,0-5.57-4l-9.74,5.37a3.79,3.79,0,0,0,3.78,6.56l2.39-1.19-5,25.25a4,4,0,0,0,3.78,4.57,3.74,3.74,0,0,0,1.59-.4l10.54-4.57a3.79,3.79,0,1,0-3-7h0Zm0,0" /><path class="b" d="M67.66,45a5.37,5.37,0,1,0-5.37-5.37A5.35,5.35,0,0,0,67.66,45h0Zm0,0" /> </g> </svg> 

@@ -1,5 +1,8 @@
-select.language
-  option
-    a(href='/ua') UA
-  option
-    a(href='/ru') RU
+.language
+  .dropdown.open
+    button#language-dropdown.btn.btn-language.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") UK
+      span.caret
+
+    ul.dropdown-menu(aria-labelledby="language-dropdown")
+      li(dir="ltr")
+        a(href="/ru/sanatorii.html") RU

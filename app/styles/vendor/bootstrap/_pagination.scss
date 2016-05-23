@@ -13,7 +13,7 @@
     margin: 0 3px 10px;
     > a,
     > span {
-      font-size: $font-size-base+3;
+      font-size: $font-size-base;
       position: relative;
       float: left; // Collapse white-space
       padding: $padding-base-vertical $padding-base-horizontal;
@@ -41,7 +41,8 @@
   }
 
   > .active > a,
-  > .active > span {
+  > .active > span,
+  > li > .active {
     &,
     &:hover,
     &:focus {

@@ -27,6 +27,12 @@
     margin-bottom: 20px;
     text-align: center;
 
+    @media (max-width: $screen-xs-max) {
+
+      font-size: 30px;
+
+    }
+
   }
 
   &__top-row {
@@ -63,6 +69,7 @@
     position: relative;
     overflow: hidden;
     border-radius: $border-radius-base;
+    padding-left: 30px;
 
     &::before {
 
@@ -276,9 +283,11 @@
 
   }
 
-  & .stars::before {
+  .stars::before {
 
     right: 15px;
+    top: 50%;
+    margin-top: -7px;
 
   }
 

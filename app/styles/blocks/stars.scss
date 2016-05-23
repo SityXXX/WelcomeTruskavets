@@ -2,16 +2,15 @@
 
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 
   &::before {
 
     content: '';
     position: absolute;
-    top: 50%;
-    margin: -6px;
     background: url('../images/star@1x.png')100% 50% repeat-x;
-    background-size: 13px 12px;
-    height: 12px;
+    background-size: 14px 13px;
+    height: 13px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
@@ -29,31 +28,31 @@
 
   &--1::before {
 
-    width: 13px;
+    width: 14px;
 
   }
 
   &--2::before {
 
-    width: 26px;
+    width: 28px;
 
   }
 
   &--3::before {
 
-    width: 39px;
+    width: 42px;
 
   }
 
   &--4::before {
 
-    width: 52px;
+    width: 56px;
 
   }
 
   &--5::before {
 
-    width: 65px;
+    width: 70px;
 
   }
 
