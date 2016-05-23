@@ -2,6 +2,12 @@
 
   float: right;
 
+  .open .caret {
+
+    transform: rotate(180deg);
+
+  }
+
   @media (max-width: $screen-xs-max) {
 
     float: left;

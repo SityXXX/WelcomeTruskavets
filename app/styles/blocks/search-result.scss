@@ -1,0 +1,15 @@
+.search-result {
+
+  background-color: #ffffff;
+  overflow: hidden;
+  @include border-bottom-radius($border-radius-base);
+  @include border-top-radius($border-radius-base);
+
+  &__img-wrap {
+
+    float: left;
+    margin: 0 10px 10px 0;
+
+  }
+
+}
