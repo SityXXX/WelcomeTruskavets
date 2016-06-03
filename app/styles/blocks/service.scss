@@ -1,0 +1,17 @@
+.service {
+
+  width: 35px;
+  height: 35px;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  border: 1px solid $brand-primary;
+  background-position: 50% 50%;
+
+  &--residency {
+
+    background-image: url('../images/residency.png');
+
+  }
+
+}

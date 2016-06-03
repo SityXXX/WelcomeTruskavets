@@ -99,7 +99,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['wiredep','jade','styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['jade','styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -121,7 +121,6 @@ gulp.task('serve', ['wiredep','jade','styles', 'scripts', 'fonts'], () => {
   gulp.watch('app/**/*.jade', ['jade']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
 gulp.task('serve:dist', () => {
