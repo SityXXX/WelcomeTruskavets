@@ -130,6 +130,28 @@
 
   }
 
+  .deeper {
+
+    position: relative;
+
+    & > a:hover + .nav-child {
+
+      display: block;
+
+    }
+
+  }
+
+  .nav-child {
+
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+
+  }
+
 
 
 }

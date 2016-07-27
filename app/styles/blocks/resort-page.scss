@@ -1,5 +1,23 @@
 .resort-page {
 
+  &__img-wrap {
+
+    overflow: hidden;
+    border-radius: $border-radius-base;
+    max-height: 400px;
+    margin-bottom: 10px;
+
+  }
+
+  &__service-header, &__include-header {
+
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+  }
+
   &__descr {
 
     background-color: #ffffff;
@@ -9,5 +27,41 @@
 
   }
 
+  &__intro {
+
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ababab;
+
+  }
+
+  &__service {
+
+    font-size: 12px;
+
+  }
+
+  &__img-desc-row {
+
+    margin-bottom: 10px;
+
+  }
+
+  &__booking {
+
+    background-color: #1a658f;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    @include border-bottom-radius($border-radius-base);
+    @include border-top-radius($border-radius-base);
+
+  }
+
+  label {
+
+    color: #ffffff;
+    text-transform: uppercase;
+
+  }
 
 }

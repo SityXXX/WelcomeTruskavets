@@ -1,0 +1,15 @@
+.gallery {
+
+  padding: 0;
+  list-style: none;
+
+  & > li > a {
+
+    display: block;
+    overflow: hidden;
+    @include border-bottom-radius($border-radius-base);
+    @include border-top-radius($border-radius-base);
+
+  }
+
+}
